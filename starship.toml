@@ -1,0 +1,32 @@
+format = """$env_var $all"""
+
+[character] 
+success_symbol = ""
+error_symbol = ""
+
+[env_var.STARSHIP_DISTRO]
+format = '[$env_value](white)'
+variable = "STARSHIP_DISTRO"
+disabled = false 
+
+[git_branch]
+style = "bold purple"
+symbol = "git "
+
+[git_status] 
+ahead = ">" 
+behind = "<" 
+up_to_date = ""
+diverged = "<>" 
+renamed = "r"
+deleted = "x"
+stashed = ""
+
+[nodejs]
+format = "via [nodejs](bold green) "
+
+[package]
+format = "via [pkg](brown) "
+
+[python]
+format = "via [py](bold yellow) "
