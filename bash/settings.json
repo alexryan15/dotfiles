@@ -1,38 +1,130 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": [],
-    "defaultProfile": "{c1c79e29-5a17-4a6b-ba89-5b4120dd4239}",
+    "actions": 
+    [
+        {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+c"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+d"
+        }
+    ],
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{1ba9dc3e-28e5-47f0-a5bc-2288e0a6f26e}",
+    "initialCols": 140,
+    "initialRows": 35,
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
     "profiles": 
     {
-        "defaults": {},
+        "defaults": 
+        {
+            "cursorShape": "underscore",
+            "elevate": true,
+            "opacity": 80,
+            "useAcrylic": true
+        },
         "list": 
         [
             {
-                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "commandline": "C:\\Program Files\\Git\\bin\\bash.exe",
+                "cursorShape": "underscore",
+                "elevate": true,
+                "font": 
+                {
+                    "face": "FiraCode Nerd Font"
+                },
+                "guid": "{1ba9dc3e-28e5-47f0-a5bc-2288e0a6f26e}",
                 "hidden": false,
-                "name": "Windows PowerShell"
+                "icon": "C:\\Users\\ARyan2\\dotfiles\\icon.png",
+                "name": "Git Bash",
+                "opacity": 85,
+                "startingDirectory": "%USERPROFILE%",
+                "suppressApplicationTitle": true,
+                "tabTitle": "Git Bash",
+                "useAcrylic": true
             },
             {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "cursorShape": "underscore",
+                "elevate": true,
+                "font": 
+                {
+                    "face": "FiraCode Nerd Font"
+                },
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell",
+                "opacity": 85,
+                "suppressApplicationTitle": true,
+                "useAcrylic": true
+            },
+            {
+                "elevate": true,
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "Command Prompt"
             },
             {
-                "colorScheme": "Campbell",
-                "commandline": "ubuntu2004.exe",
-                "cursorShape": "underscore",
-                "font": 
-                {
-                    "face": "FuraCode Nerd Font Mono",
-                    "size": 13
-                },
-                "guid": "{c1c79e29-5a17-4a6b-ba89-5b4120dd4239}",
+                "guid": "{07d19d00-a360-5515-afef-14e5e275ca43}",
                 "hidden": false,
-                "icon": "https://assets.ubuntu.com/v1/49a1a858-favicon-32x32.png",
-                "name": "Ubuntu",
-                "suppressApplicationTitle": false,
-                "tabTitle": "Ubuntu 20.04.5 LTS"
+                "name": "Developer Command Prompt for VS 2019",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{52bea4bb-a897-5c18-8b03-4b8ccf6cf8aa}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2019",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{ac9ec1f3-5a32-530a-b3a2-8e26de555cd2}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{d34cdb47-6d3e-5c58-bb17-31487534b162}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{198fa2d4-c831-5e2f-80b4-35ed344c76ca}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022 (2)",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{5ce835c2-2ea0-5812-afb7-0abde2ab94d3}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022 (2)",
+                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
@@ -223,29 +315,6 @@
             "yellow": "#C4A000"
         },
         {
-            "background": "#300A24",
-            "black": "#171421",
-            "blue": "#0037DA",
-            "brightBlack": "#767676",
-            "brightBlue": "#08458F",
-            "brightCyan": "#2C9FB3",
-            "brightGreen": "#26A269",
-            "brightPurple": "#A347BA",
-            "brightRed": "#C01C28",
-            "brightWhite": "#F2F2F2",
-            "brightYellow": "#A2734C",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#3A96DD",
-            "foreground": "#FFFFFF",
-            "green": "#26A269",
-            "name": "Ubuntu-20.04-ColorScheme",
-            "purple": "#881798",
-            "red": "#C21A23",
-            "selectionBackground": "#FFFFFF",
-            "white": "#CCCCCC",
-            "yellow": "#A2734C"
-        },
-        {
             "background": "#000000",
             "black": "#000000",
             "blue": "#000080",
@@ -268,5 +337,7 @@
             "white": "#C0C0C0",
             "yellow": "#808000"
         }
-    ]
+    ],
+    "themes": [],
+    "useAcrylicInTabRow": true
 }
